@@ -130,38 +130,7 @@
 		  })
 		}
 	};
-	
-// functions for border radius
-
-// function for border radius normal screen
-
-var imgBor = () => {
-		// select all images  
-		var imgFour = $('#img-four .row div');   
-		// step 1 select all #img-four div
-		// step 2 create for loop for each  first div
-		// step 3 create for loop for each second div
-		// step 4 create for loop for each third div
-		for (var i = 0; i <= imgFour.length; i+=4){
-			$(imgFour[i]).css('border-top-left-radius', '1rem');		
-		};
-		for (var i = 1; i <= imgFour.length; i+=4){
-			$(imgFour[i]).css('border-top-right-radius', '1rem');		
-		};
-		for (var i = 2; i <= imgFour.length; i+=4){
-			$(imgFour[i]).css('border-bottom-left-radius', '1rem');		
-		};
-		for (var i = 3; i <= imgFour.length; i+=4){
-			$(imgFour[i]).css('border-bottom-right-radius', '1rem');		
-			};
-		};
-
-
-
-
-	
-
-			
+				
 	// Document on load.
 	$(function(){
 		mainMenu();
@@ -170,9 +139,6 @@ var imgBor = () => {
 		mobileMenuOutsideClick();
 		contentWayPoint();
 		stickyBanner();
-		// change img radius 
-		imgBor();
-		// imgBorSm();
 	});
 
 }());

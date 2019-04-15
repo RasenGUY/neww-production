@@ -498,17 +498,17 @@ var autoAppImg = (list, gal) => {
 // store path name of loaded page
 var isPath = window.location.pathname;
 
-if (isPath === '/new-world-website/gallery/students.html'){
+if (isPath === '/neww-production/gallery/students.html'){
     autoAppImg(listStud, galStud);
-} else if (isPath === '/new-world-website/gallery/teaching.html') {
+} else if (isPath === '/neww-production/gallery/teaching.html') {
     autoAppImg(listTeach, galTeach);
-} else if (isPath === '/new-world-website/gallery/volunteers.html') {
+} else if (isPath === '/neww-production/gallery/volunteers.html') {
     autoAppImg(listVol, galVol);
 } else if (isPath === '/new-world-website/gallery/newworld.html') {
     autoAppImg(listNewworld, galNewworld);   
     // console.log('on new world page')
-} else if (isPath === '/new-world-website/gallery/travel.html') {
+} else if (isPath === '/neww-production/gallery/travel.html') {
     autoAppImg(listTrav, galTravel);
-} else if (isPath === '/new-world-website/gallery/thehouse.html') {
+} else if (isPath === '/neww-production/gallery/thehouse.html') {
     autoAppImg(listHouse, galHouse);
 };
