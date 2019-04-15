@@ -504,7 +504,7 @@ if (isPath === '/neww-production/gallery/students.html'){
     autoAppImg(listTeach, galTeach);
 } else if (isPath === '/neww-production/gallery/volunteers.html') {
     autoAppImg(listVol, galVol);
-} else if (isPath === '/new-world-website/gallery/newworld.html') {
+} else if (isPath === '/neww-production/gallery/newworld.html') {
     autoAppImg(listNewworld, galNewworld);   
     // console.log('on new world page')
 } else if (isPath === '/neww-production/gallery/travel.html') {
