@@ -219,12 +219,12 @@
             element: 'fm-medium-embed'
         };
       
-        var fmInit = ()=> {
-            feedmirror.initialize(fmSettings);
-        }
+        // var fmInit = ()=> {
+        feedmirror.initialize(fmSettings);
+        // }
 
-        var fmMakeup = ()=> {
-            var fmCSS = () => {
+        // var fmMakeup = ()=> {
+            var fmMakeup = () => {
                 // fetch fm elements
                 var els = $('.fm-post-wrapper');
                 var fmButtonContainer = $('.fm-medium-profile')
@@ -254,15 +254,16 @@
                 $(fmButton).css({marginTop: '5rem'})
                 $(fmButton).addClass("btn btn-primary btn-lg ")
             };
-            fmCSS();
-        }
-
-        $.ajax({
-        url:fmInit(),
-        success:()=>{
-            fmMakeup();
-        }
-        })
+            // fmCSS();
+        // }
+        window.onload = fmMakeup;
+// probably very usefull for database actions
+        // $.ajax({
+        // url:fmInit(),
+        // success:()=>{
+        //     fmMakeup();
+        // }
+        // })
         </script>
 
         <script src="static/js/enquire.js"></script>
