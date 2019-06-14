@@ -115,7 +115,7 @@
 									<a href="../index.html">Home</a>
 								</li>
 								<li>
-										<a href="../getinvolved/volunteering.html" class="fh5co-sub-ddown">Get Involved</a>
+									<a href="../getinvolved/volunteering.html" class="fh5co-sub-ddown">Get Involved</a>
 										<ul class="fh5co-sub-menu">
 											<li><a href="../getinvolved/volunteering.html">Volunteering</a></li>
 											<li>
@@ -130,6 +130,7 @@
 											<li><a href="https://goo.gl/forms/42PxcOgwkW21OsGr2">Apply</a></li>									
 										</ul>
 								</li>
+								
 								<li class="active">
 									<a href="students.html" class="fh5co-sub-ddown">Gallery</a>
 										<ul class="fh5co-sub-menu">
@@ -140,6 +141,9 @@
 											<li class="active"><a href="travel.html">Travel</a></li>
 											<li><a href="thehouse.html">The House</a></li>
 									</ul>
+								</li>
+								<li>
+									<a href="../blog.html">Blog</a>
 								</li>
 								<li><a href="../about.html">About</a></li>
 								<li><a href="../contact.html">Contact</a></li>
@@ -234,10 +238,11 @@
     <script src="../static/js/enquire.js"></script>
 
 	<script>
-		const grid = new Muuri ('.grid');
-		window.addEventListener('load', function () {
+		var refPage = ()=>{
+			const grid = new Muuri ('.grid');
 			grid.refreshItems();
-		});
+		}
+		window.onload = refPage;
 	</script> 
 
 	</body>

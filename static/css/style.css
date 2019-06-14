@@ -17,6 +17,7 @@
   --base-dark: #000000;
   --base-light: #ffffff;
   --theme-one: #FF600F;
+  --theme-one-opacity: rgba(255, 96, 15, 0.6);
   --theme-one-dark: #C96C33;
   --theme-two: #0000FE;
   --highlight: #FBFD02;
@@ -2170,6 +2171,47 @@ a:focus, a:hover {
   .container.photo-gal {
     width: 100vw!important;
   }
+
+  /* blog page */
+  /* css for feedmirror */
+
+  .fm-post {
+    border: 1px solid var(--theme-one);
+    background-color: var(--base-light);
+    box-shadow: 5px 5px 10px var(--theme-one);
+    -moz-box-shadow: 5px 5px 10px var(--theme-one);
+    -o-box-shadow: 5px 5px 10px var(--theme-one);
+    -ms-box-shadow: 5px 5px 10px var(--theme-one);
+    min-height: 40rem;
+    border-radius: 1rem;
+    padding: 2rem;
+  }
+  .fm-post:hover{
+    box-shadow: 3px 3px 6px var(--theme-one-opacity);
+  }
+
+  .fm-post-image {
+    display: inline-block;
+    border-radius: 0.5rem;
+    min-height: 15rem;
+    width: 100%;
+    background-repeat: none;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .fm-post-title a {
+    color: var(--base-dark)!important;
+    letter-spacing: 1px;
+    font-weight: bold; 
+  }
+
+  @media screen and (max-width: 768px){
+    .fm-post {
+      margin-top: 2rem;
+    }
+  } 
+
 
 
 
